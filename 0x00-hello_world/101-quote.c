@@ -4,7 +4,6 @@
  * main - Entry point
  *
  * Description: print a quote using write function
- *    
  *
  * Return: This time we return an error 1.
 */
@@ -16,4 +15,3 @@ int main(void)
 	write(1, quo, 59);
 	return (1);
 }
-
