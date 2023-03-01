@@ -16,7 +16,7 @@ for (i = 0; i >= 0; i++)
 {
 if (dest[i] == '\0')
 {
-for (len = 0; len <= n; len++)
+for (len = 0; src[i] != '\0' && i < n; len++)
 {
 dest[i + len] = src[len];
 }
