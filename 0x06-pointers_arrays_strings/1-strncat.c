@@ -18,7 +18,7 @@ if (dest[i] == '\0')
 {
 for (len = 0; src[i] != '\0' && i < n; len++)
 {
-dest[i + len] = src[len];
+dest[i + len] = src[n];
 }
 break;
 }
