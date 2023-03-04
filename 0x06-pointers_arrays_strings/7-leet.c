@@ -12,7 +12,7 @@ char *leet(char *str)
 
 	for (int i = 0; str[i] != '\0'; i++)
 	{
-		for (int j = 0; enc[j] != '\0'; j++)
+		for (int j = 0; j <= 4 ; j++)
 		{
 			if (str[i] == c[j] || str[i] == c[j] - 32)
 			{
