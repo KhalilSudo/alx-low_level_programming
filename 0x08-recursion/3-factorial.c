@@ -16,6 +16,6 @@ return (1);
 }
 else
 {
-return (factorial(int n - 1));
+return (factorial(int n)-1);
 }
 }
