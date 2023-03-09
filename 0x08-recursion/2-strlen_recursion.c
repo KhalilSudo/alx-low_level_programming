@@ -14,7 +14,7 @@ int i = 0;
 
 if (*s == '\0')
 {
-return;
+
 }
 else
 {
