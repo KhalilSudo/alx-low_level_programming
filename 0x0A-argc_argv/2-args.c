@@ -6,7 +6,7 @@
  *@argc:number of argument
  * Return: Always 0 (Success)
  **/
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
 for (int i = 0; i < argc ; i++)
 {
