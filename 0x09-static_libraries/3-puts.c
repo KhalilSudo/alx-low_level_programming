@@ -1,13 +1,24 @@
 #include "main.h"
-#include<stdio.h>
+
 /**
- * main - Entry point
+ * _puts - print a string
  *
- * Return: Always 0 (Success)
- */
- void _puts(char *str);
-int main(void)
+ * @str: string pointer
+ *
+ * Return: nothing
+*/
+
+void _puts(char *str)
 {
-	
-	return (0);
+	int i;
+
+	for (i = 0; str[i] >= 0; i++)
+	{
+		if (str[i] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		_putchar(str[i]);
+	}
 }
