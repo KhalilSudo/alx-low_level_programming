@@ -15,7 +15,7 @@ gcc -c 5-strstr.c
 gcc -c 6-abs.c
 gcc -c 9-strcpy.c
 gcc -c _putchar.c
-gcc -c  strchr.c
-gcc -c  strcmp.c
-gcc -c  strpbrk.c
-gcc -c  strspn.c
+gcc -c  2-strchr.c
+gcc -c  2-strcmp.c
+gcc -c  2-strpbrk.c
+gcc -c  2-strspn.c
