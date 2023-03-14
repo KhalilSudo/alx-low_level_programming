@@ -28,14 +28,13 @@ int getLength(char *str)
  */
 char *str_concat(char *s1, char *s2)
 {
+	char *concatenated;
+	int i, j, size;
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-
-	char *concatenated;
-	int i, j, size;
-
 	size = getLength(s1) + getLength(s2);
 	concatenated = malloc(sizeof(char) * (size + 1));
 	if (concatenated == NULL)
