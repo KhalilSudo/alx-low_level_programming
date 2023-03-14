@@ -6,10 +6,13 @@
  */
 int getLength(char *str)
 {
-    int i;
+	int i;
 
-    for (i = 0; str[i] != '\0'; i++);
-    return i;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		/* do nothing */
+	}
+	return (i);
 }
 
 /**
@@ -23,32 +26,33 @@ int getLength(char *str)
  */
 char *str_concat(char *s1, char *s2)
 {
-    if (s1 == NULL)
-        s1 = "";
-    if (s2 == NULL)
-        s2 = "";
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-    char *concatenated;
-    int i, j, size;
+	char *concatenated;
+	int i, j, size;
 
-    size = getLength(s1) + getLength(s2);
-    concatenated = malloc(sizeof(char) * (size + 1));
-    if (concatenated == NULL) {
-        free(concatenated);
-        return (NULL);
-    }
+	size = getLength(s1) + getLength(s2);
+	concatenated = malloc(sizeof(char) * (size + 1));
+	if (concatenated == NULL)
+	{
+		free(concatenated);
+		return (NULL);
+	}
 
-    for (i = 0; s1[i] != '\0'; i++)
-    {
-        concatenated[i] = s1[i];
-    }
+	for (i = 0; s1[i] != '\0'; i++)
+	{
+		concatenated[i] = s1[i];
+	}
 
-    for (j = 0; s2[j] != '\0'; j++)
-    {
-        concatenated[i + j] = s2[j];
-    }
+	for (j = 0; s2[j] != '\0'; j++)
+	{
+		concatenated[i + j] = s2[j];
+	}
 
-    concatenated[i + j] = '\0';
-    return concatenated;
+	concatenated[i + j] = '\0';
+	return (concatenated);
 }
 
