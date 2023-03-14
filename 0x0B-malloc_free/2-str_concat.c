@@ -23,22 +23,20 @@ int getLength(char *str)
  */
 char *str_concat(char *s1, char *s2)
 {
-    if (s1 =='NULL')
-    {
-        s1 = malloc(sizeof(char));
-        s1[0] = '\0';
-    }
-    if (s2 == 'NULL')
-    {
-        s2 = malloc(sizeof(char));
-        s2[0] = '\0';
-    }
+    if (s1 == NULL)
+        s1 = "";
+    if (s2 == NULL)
+        s2 = "";
 
     char *concatenated;
     int i, j, size;
 
     size = getLength(s1) + getLength(s2);
     concatenated = malloc(sizeof(char) * (size + 1));
+    if (concatenated == NULL) {
+        free(concatenated);
+        return (NULL);
+    }
 
     for (i = 0; s1[i] != '\0'; i++)
     {
