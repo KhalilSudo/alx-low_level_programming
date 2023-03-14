@@ -1,3 +1,5 @@
+#include "main.h"
+#include <stdlib.h>
 /**
  * getLength - Returns the length of a string
  * @str: The string to get the length of
