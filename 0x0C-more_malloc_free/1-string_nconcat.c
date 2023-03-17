@@ -33,7 +33,7 @@ int getLength(char *str)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concatenated;
-	int i, j, size;
+	unsigned int i, j, size;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -53,7 +53,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		concatenated[i] = s1[i];
 	}
 
-	for (j = 0; j < n && s2[j] != '\0'; j++
+	for (j = 0; j < n && s2[j] != '\0'; j++)
 	{
 			concatenated[i + j] = s2[j];
 	}
