@@ -45,7 +45,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (concatenated == NULL)
 	{
-		free(concatenated);
 		return (NULL);
 	}
 
@@ -54,16 +53,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		concatenated[i] = s1[i];
 	}
 
-	for (j = 0; j <= n; j++)
+	for (j = 0; j < n && s2[j] != '\0'; j++
 	{
-		if (s2[j] != '\0')
-		{
 			concatenated[i + j] = s2[j];
-		}
-		else
-		{
-			break;
-		}
 	}
 
 	concatenated[i + j] = '\0';
