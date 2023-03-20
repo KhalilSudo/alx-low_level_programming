@@ -1,3 +1,5 @@
+#include 'dog.h'
+
 /**
 * init_dog - function that int value information of a dog
 * @name: name of the dog
