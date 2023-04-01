@@ -7,7 +7,7 @@
  *
  * Return: Pointer to the newly added node, or NULL if memory allocation fails.
  */
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newNode, *tempNode;
 
@@ -27,7 +27,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (*head == NULL)
 	{
-		(*head) = newNode;
+		*head = newNode;
 	}
 	else
 	{

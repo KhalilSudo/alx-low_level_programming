@@ -24,8 +24,40 @@ size_t list_len(const list_t *h);
 list_t *add_node(list_t **head, const char *str);
 
 #endif
- 
- 
+ size_t print_list(const list_t *h)
+{
+	size_t nodeCount = 0;
+
+	while (h != NULL)
+	{
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%d] %s\n", h->len, h->str);
+
+		h = h->next;
+		nodeCount++;
+	}
+
+	return (nodeCount);
+}
+
+ list_t *add_node(list_t **head, const char *str)
+{
+list_t *newNode;
+
+newNode = malloc(sizeof(list_t));
+
+if(newNode == NULL)
+{
+	return NULL ;
+}
+newNode->str = strdup(str);
+newNode->next = head;
+head = &newNode;
+return (newNode);
+}
+
  
 int main(void)
 {
