@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * add_node - Adds a new node to the beginning of a list_t list.
+ * add_node_end - Adds a new node to the end of a list_t list.
  * @head: Pointer to pointer to head of the list.
  * @str: String to be added as the new node's str member.
  *
- * Return: Pointer to the newly added node, or NULL if memory allocation fails.
+ * Return: Pointer to the newly added node, or NULL
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
