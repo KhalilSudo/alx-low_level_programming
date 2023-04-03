@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
-*listint_len -print list of node
+*print_listint -print list of node
 *
 *@h :head of linked lists
 *
