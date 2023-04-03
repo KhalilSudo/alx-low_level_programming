@@ -7,7 +7,7 @@
 *
 *@h :head of linked lists
 *
-*return nombre of nodes
+*Return: Number of nodes.
 */
 size_t print_listint(const listint_t *h)
 {
