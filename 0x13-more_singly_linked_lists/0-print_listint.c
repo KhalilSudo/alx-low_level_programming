@@ -16,8 +16,8 @@ size_t print_listint(const listint_t *h)
 	nbNodes = 0;
 	while (h != NULL)
 	{
-		printf("> %lu elements\n", h->n);
+		printf("%d/n", h->n);
 		nbNodes++;
 	}
-	return (nodes);
+	return (nbNodes);
 }
