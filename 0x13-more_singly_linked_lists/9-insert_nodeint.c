@@ -1,52 +1,52 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - insert node at given index
+ * insert_nodeint_at_index - inserts a new node at a given position.
+ * @head: pointer to a pointer to the beginning of the list.
+ * @idx: index of the list where the new node should be added.
+ * @n: data of the new node.
  *
- * @head: pointer to the head of the linked list
- * @idx: index at which to insert the new node
- * @n: value of the new node
- *
- * Return: pointer to the head of the modified
+ * Return: the address of the new node, or NULL if it failed.
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	unsigned int nbNodes;
-	listint_t *newNode, *prevNode, *currNode;
+	listint_t *new_node = NULL, *prev_node = NULL, *curr_node = NULL;
+	unsigned int i;
 
-	newNode = malloc(sizeof(listint_t));
-	if (newNode == NULL)
-	{
+	if (!head)
 		return (NULL);
+
+	new_node = malloc(sizeof(listint_t));
+	if (!new_node)
+		return (NULL);
+	new_node->n = n;
+
+	if (!idx)
+	{
+		new_node->next = *head;
+		*head = new_node;
+		return (new_node);
 	}
 
-	newNode->n = n;
-	newNode->next = NULL;
-
-	if (idx == 0)
+	curr_node = *head;
+	for (i = 0; i < idx; i++)
 	{
-		newNode->next = *head;
-		*head = newNode;
-		return (*head);
-	}
-
-	prevNode = *head;
-	currNode = *head;
-	for (nbNodes = 0; nbNodes < idx; nbNodes++)
-	{
-		prevNode = currNode;
-		currNode = currNode->next;
-		if (currNode == NULL && nbNodes < idx - 1)
+		prev_node = curr_node;
+		curr_node = curr_node->next;
+		if (!curr_node && i == idx - 1)
 		{
-			free(newNode);
-			return (NULL); /* index out of bounds, return NULL */
+			prev_node->next = new_node;
+			new_node->next = NULL;
+			return (new_node);
+		}
+		else if (!curr_node)
+		{
+			free(new_node);
+			return (NULL);
 		}
 	}
-
-	newNode->next = currNode;
-	prevNode->next = newNode;
-
-	return (*head);
+	prev_node->next = new_node;
+	new_node->next = curr_node;
+	return (new_node);
 }
