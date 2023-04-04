@@ -3,27 +3,26 @@
 #include "lists.h"
 
 /**
-*pop_listint -delete head and return n
+* pop_listint - delete head and return n
 *
-*@head :pointer to head of linked list
+* @head: pointer to pointer to head of linked list
 *
-*@n :integer
-*Return: int n.
+* Return: int n.
 */
-int pop_listint(listint_t **head);
+int pop_listint(listint_t **head)
 {
-	listint_t *newNode, *temp;
-	int n ;
+	listint_t *temp;
+	int n;
 
-	if (head == NULL)
+	if (head == NULL || *head == NULL)
 	{
-		return (NULL);
+		return (0);
 	}
 
-	n = *head->n ;
-	temp = *head->next;
-	free(head);
+	n = (*head)->n;
+	temp = (*head)->next;
+	free(*head);
 	*head = temp;
-	
+
 	return (n);
 }
