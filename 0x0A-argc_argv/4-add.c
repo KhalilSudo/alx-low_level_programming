@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (isNum(argv[i]) == 0)
+		if (isNumber(argv[i]) == 0)
 		{
 			sum += atoi(argv[i]);
 		}
