@@ -5,6 +5,8 @@
  *
  * Return: pointer to array, or NULL if size is 0 or if memory allocation fails
  */
+
+#include "stdlib.h"
 char *create_array(unsigned int size, char c)
 {
     char *ptr;
