@@ -7,7 +7,7 @@
  *
  * @format: a string containing a combination of formats specifier
  * @...: variable number of arguments, where each argument corresponds to
- *       a format specifier
+ *       a format specfier
  *
  * Return: void
  */
@@ -48,6 +48,7 @@ void print_all(const char * const format, ...)
 				printf("%s", s);
 				break;
 			default:
+			printf(format);
 		}
 	}
 	printf("\n");
