@@ -21,14 +21,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	file = open(filename, O_RDONLY);
 
 	if (file == -1)
+	{
 		free(buff);
 		return (0);
+	}
 	byteRead = read(file, buff, letters);
 
 	if (byteRead == -1)
+	{
 		free(buff);
 		close(file);
 		return (0);
+	}
 
 	byteWritten = write(STDOUT_FILENO, buff, byteRead);
 	if (byteWritten == -1 || byteWritten != byteRead)
