@@ -9,9 +9,9 @@
 /**
  * exit_error - Prints error messages and exits with a specific status.
  * @status: The status code representing the type of error.
- * @argv: The command-line arguments.
+ * @arg: The argument associated with the error.
  */
-void exit_error(int status, char *argv[])
+void exit_error(int status, const char *arg)
 {
 	switch (status)
 	{
@@ -21,12 +21,12 @@ void exit_error(int status, char *argv[])
 		break;
 
 	case 98:
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", arg);
 		exit(98);
 		break;
 
 	case 99:
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", arg);
 		exit(99);
 		break;
 
@@ -50,11 +50,10 @@ int main(int argc, char *argv[])
 {
 	int file_from, file_to;
 	char buff[MAXSIZE];
-
 	int nr_stats, nw_stats, nc_stats;
 
 	if (argc != 3)
-		exit_error(97, argv);
+		exit_error(97, NULL);
 
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
@@ -68,7 +67,7 @@ int main(int argc, char *argv[])
 	if (file_to == -1)
 		exit_error(99, argv[2]);
 
-	nw_stats = write(file_to, buff, MAXSIZE);
+	nw_stats = write(file_to, buff, (ssize_t)nr_stats);
 	if (nw_stats == -1)
 		exit_error(99, argv[2]);
 
