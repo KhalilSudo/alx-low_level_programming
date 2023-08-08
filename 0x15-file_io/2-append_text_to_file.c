@@ -22,7 +22,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	for (length = 0; text_content[length] != '\0'; length++)
 		;
 
-	file = open(filename, O_WRONLY | O_APPEND);
+	file = open(filename, O_WRONLY | O_APPEND |O_CREAT);
 	if (file == -1)
 		return (-1);
 
