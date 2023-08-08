@@ -22,11 +22,11 @@ int append_text_to_file(const char *filename, char *text_content)
 	for (length = 0; text_content[length] != '\0'; length++)
 		;
 
-	file = open(filename, O_WRONLY | O_APPEND |O_CREAT);
+	file = open(filename, O_WRONLY | O_APPEND);
 	if (file == -1)
 		return (-1);
 
-	status = write(file, text_content, length + 1);
+	status = write(file, text_content, length);
 	if (status == -1)
 		return (-1);
 
