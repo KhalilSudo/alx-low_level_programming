@@ -31,7 +31,7 @@ void exit_error(int status, const char *arg)
 		break;
 
 	case 100:
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", arg[1]);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", -1);
 		exit(100);
 		break;
 
@@ -80,11 +80,11 @@ int main(int argc, char *argv[])
 
 	nc_stats = close(file_from);
 	if (nc_stats == -1)
-		exit_error(100, argv[1]);
+		exit_error(100, NULL);
 
 	nc_stats = close(file_to);
 	if (nc_stats == -1)
-		exit_error(100, argv[2]);
+		exit_error(100, NULL);
 
 	return (0);
 }
