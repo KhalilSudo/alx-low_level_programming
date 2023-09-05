@@ -4,7 +4,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-#define MAXSIZE 1024
+#define MAXSIZE 3000
 
 /**
  * exit_error - Prints error messages and exits with a specific status.
