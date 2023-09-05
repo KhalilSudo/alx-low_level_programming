@@ -31,7 +31,7 @@ void exit_error(int status, const char *arg)
 		break;
 
 	case 100:
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", arg);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", arg[1]);
 		exit(100);
 		break;
 
@@ -55,7 +55,10 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 		exit_error(97, NULL);
 
-
+	if (strcmp(argv[1], argv[2]) == 0)
+	{
+	dprintf(STDERR_FILENO, "Error: Source and destination files are the same\n");
+	exit(100);
 }
 
 
@@ -77,7 +80,7 @@ int main(int argc, char *argv[])
 
 	nc_stats = close(file_from);
 	if (nc_stats == -1)
-		exit_error(100, argv[2]);
+		exit_error(100, argv[1]);
 
 	nc_stats = close(file_to);
 	if (nc_stats == -1)
@@ -85,4 +88,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
