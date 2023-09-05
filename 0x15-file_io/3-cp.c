@@ -31,7 +31,7 @@ void exit_error(int status, const char *arg)
 		break;
 
 	case 100:
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", -1);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", arg[1]);
 		exit(100);
 		break;
 
