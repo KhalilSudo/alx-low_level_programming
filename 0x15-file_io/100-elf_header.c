@@ -43,9 +43,11 @@ void elf_checker(unsigned char *e_ident)
 */
 void display_magic(unsigned char *e_ident)
 {
+	int index;
+
     printf("  Magic    ");
 
-    for (int index = 0; index < EI_NIDENT; index++)
+    for (index = 0; index < EI_NIDENT; index++)
     {
         printf("%02x%s", e_ident[index], (index == EI_NIDENT - 1) ? "\n" : " ");
     }
