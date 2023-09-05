@@ -55,6 +55,13 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 		exit_error(97, NULL);
 
+	if (strcmp(argv[1], argv[2]) == 0)
+	{
+	dprintf(STDERR_FILENO, "Error: Source and destination files are the same\n");
+	exit(100);
+}
+
+
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
 		exit_error(98, argv[1]);
@@ -63,7 +70,7 @@ int main(int argc, char *argv[])
 	if (nr_stats == -1)
 		exit_error(98, argv[1]);
 
-	file_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
+	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND);
 	if (file_to == -1)
 		exit_error(99, argv[2]);
 
@@ -81,3 +88,4 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
+
