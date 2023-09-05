@@ -1,0 +1,312 @@
+
+========== 100-elf_header.c ==========
+100-elf_header.c:26: ERROR: open brace '{' following function declarations go on the next line
+100-elf_header.c:27: WARNING: please, no spaces at the start of a line
+100-elf_header.c:29: WARNING: please, no spaces at the start of a line
+100-elf_header.c:29: ERROR: that open brace { should be on the next line
+100-elf_header.c:30: ERROR: code indent should use tabs where possible
+100-elf_header.c:30: WARNING: please, no spaces at the start of a line
+100-elf_header.c:30: WARNING: suspect code indent for conditional statements (8, 12)
+100-elf_header.c:31: ERROR: code indent should use tabs where possible
+100-elf_header.c:31: WARNING: please, no spaces at the start of a line
+100-elf_header.c:32: ERROR: code indent should use tabs where possible
+100-elf_header.c:32: WARNING: please, no spaces at the start of a line
+100-elf_header.c:33: ERROR: code indent should use tabs where possible
+100-elf_header.c:33: WARNING: please, no spaces at the start of a line
+100-elf_header.c:34: ERROR: code indent should use tabs where possible
+100-elf_header.c:34: WARNING: please, no spaces at the start of a line
+100-elf_header.c:35: ERROR: code indent should use tabs where possible
+100-elf_header.c:35: WARNING: please, no spaces at the start of a line
+100-elf_header.c:36: ERROR: code indent should use tabs where possible
+100-elf_header.c:36: WARNING: please, no spaces at the start of a line
+100-elf_header.c:37: WARNING: please, no spaces at the start of a line
+100-elf_header.c:46: ERROR: open brace '{' following function declarations go on the next line
+100-elf_header.c:47: WARNING: please, no spaces at the start of a line
+100-elf_header.c:49: WARNING: please, no spaces at the start of a line
+100-elf_header.c:51: WARNING: please, no spaces at the start of a line
+100-elf_header.c:51: ERROR: that open brace { should be on the next line
+100-elf_header.c:52: ERROR: code indent should use tabs where possible
+100-elf_header.c:52: WARNING: please, no spaces at the start of a line
+100-elf_header.c:54: ERROR: code indent should use tabs where possible
+100-elf_header.c:54: WARNING: please, no spaces at the start of a line
+100-elf_header.c:54: WARNING: suspect code indent for conditional statements (8, 12)
+100-elf_header.c:55: ERROR: code indent should use tabs where possible
+100-elf_header.c:55: WARNING: please, no spaces at the start of a line
+100-elf_header.c:56: ERROR: code indent should use tabs where possible
+100-elf_header.c:56: WARNING: please, no spaces at the start of a line
+100-elf_header.c:57: ERROR: code indent should use tabs where possible
+100-elf_header.c:57: WARNING: please, no spaces at the start of a line
+100-elf_header.c:58: WARNING: please, no spaces at the start of a line
+100-elf_header.c:65: ERROR: open brace '{' following function declarations go on the next line
+100-elf_header.c:66: WARNING: please, no spaces at the start of a line
+100-elf_header.c:68: WARNING: please, no spaces at the start of a line
+100-elf_header.c:68: ERROR: switch and case should be at the same indent
+100-elf_header.c:68: ERROR: that open brace { should be on the next line
+100-elf_header.c:69: ERROR: code indent should use tabs where possible
+100-elf_header.c:69: WARNING: please, no spaces at the start of a line
+100-elf_header.c:70: ERROR: code indent should use tabs where possible
+100-elf_header.c:70: WARNING: please, no spaces at the start of a line
+100-elf_header.c:71: ERROR: code indent should use tabs where possible
+100-elf_header.c:71: WARNING: please, no spaces at the start of a line
+100-elf_header.c:72: ERROR: code indent should use tabs where possible
+100-elf_header.c:72: WARNING: please, no spaces at the start of a line
+100-elf_header.c:73: ERROR: code indent should use tabs where possible
+100-elf_header.c:73: WARNING: please, no spaces at the start of a line
+100-elf_header.c:74: ERROR: code indent should use tabs where possible
+100-elf_header.c:74: WARNING: please, no spaces at the start of a line
+100-elf_header.c:75: ERROR: code indent should use tabs where possible
+100-elf_header.c:75: WARNING: please, no spaces at the start of a line
+100-elf_header.c:76: ERROR: code indent should use tabs where possible
+100-elf_header.c:76: WARNING: please, no spaces at the start of a line
+100-elf_header.c:77: ERROR: code indent should use tabs where possible
+100-elf_header.c:77: WARNING: please, no spaces at the start of a line
+100-elf_header.c:78: ERROR: code indent should use tabs where possible
+100-elf_header.c:79: ERROR: code indent should use tabs where possible
+100-elf_header.c:79: WARNING: please, no spaces at the start of a line
+100-elf_header.c:80: WARNING: please, no spaces at the start of a line
+100-elf_header.c:87: ERROR: open brace '{' following function declarations go on the next line
+100-elf_header.c:88: WARNING: please, no spaces at the start of a line
+100-elf_header.c:90: WARNING: please, no spaces at the start of a line
+100-elf_header.c:90: ERROR: switch and case should be at the same indent
+100-elf_header.c:90: ERROR: that open brace { should be on the next line
+100-elf_header.c:91: ERROR: code indent should use tabs where possible
+100-elf_header.c:91: WARNING: please, no spaces at the start of a line
+100-elf_header.c:92: ERROR: code indent should use tabs where possible
+100-elf_header.c:92: WARNING: please, no spaces at the start of a line
+100-elf_header.c:93: ERROR: code indent should use tabs where possible
+100-elf_header.c:93: WARNING: please, no spaces at the start of a line
+100-elf_header.c:94: ERROR: code indent should use tabs where possible
+100-elf_header.c:94: WARNING: please, no spaces at the start of a line
+100-elf_header.c:95: ERROR: code indent should use tabs where possible
+100-elf_header.c:95: WARNING: please, no spaces at the start of a line
+100-elf_header.c:96: ERROR: code indent should use tabs where possible
+100-elf_header.c:96: WARNING: please, no spaces at the start of a line
+100-elf_header.c:97: ERROR: code indent should use tabs where possible
+100-elf_header.c:97: WARNING: please, no spaces at the start of a line
+100-elf_header.c:98: ERROR: code indent should use tabs where possible
+100-elf_header.c:98: WARNING: please, no spaces at the start of a line
+100-elf_header.c:99: ERROR: code indent should use tabs where possible
+100-elf_header.c:99: WARNING: please, no spaces at the start of a line
+100-elf_header.c:100: ERROR: code indent should use tabs where possible
+100-elf_header.c:101: ERROR: code indent should use tabs where possible
+100-elf_header.c:101: WARNING: please, no spaces at the start of a line
+100-elf_header.c:102: WARNING: please, no spaces at the start of a line
+100-elf_header.c:109: ERROR: open brace '{' following function declarations go on the next line
+100-elf_header.c:110: WARNING: please, no spaces at the start of a line
+100-elf_header.c:111: ERROR: code indent should use tabs where possible
+100-elf_header.c:111: WARNING: please, no spaces at the start of a line
+100-elf_header.c:113: WARNING: please, no spaces at the start of a line
+100-elf_header.c:113: ERROR: switch and case should be at the same indent
+100-elf_header.c:113: ERROR: that open brace { should be on the next line
+100-elf_header.c:114: ERROR: code indent should use tabs where possible
+100-elf_header.c:114: WARNING: please, no spaces at the start of a line
+100-elf_header.c:115: ERROR: code indent should use tabs where possible
+100-elf_header.c:115: WARNING: please, no spaces at the start of a line
+100-elf_header.c:116: ERROR: code indent should use tabs where possible
+100-elf_header.c:116: WARNING: please, no spaces at the start of a line
+100-elf_header.c:117: ERROR: code indent should use tabs where possible
+100-elf_header.c:118: ERROR: code indent should use tabs where possible
+100-elf_header.c:118: WARNING: please, no spaces at the start of a line
+100-elf_header.c:119: ERROR: code indent should use tabs where possible
+100-elf_header.c:119: WARNING: please, no spaces at the start of a line
+100-elf_header.c:120: WARNING: please, no spaces at the start of a line
+100-elf_header.c:127: ERROR: open brace '{' following function declarations go on the next line
+100-elf_header.c:128: WARNING: please, no spaces at the start of a line
+100-elf_header.c:130: WARNING: please, no spaces at the start of a line
+100-elf_header.c:130: ERROR: switch and case should be at the same indent
+100-elf_header.c:130: ERROR: that open brace { should be on the next line
+100-elf_header.c:131: ERROR: code indent should use tabs where possible
+100-elf_header.c:131: WARNING: please, no spaces at the start of a line
+100-elf_header.c:132: ERROR: code indent should use tabs where possible
+100-elf_header.c:132: WARNING: please, no spaces at the start of a line
+100-elf_header.c:133: ERROR: code indent should use tabs where possible
+100-elf_header.c:133: WARNING: please, no spaces at the start of a line
+100-elf_header.c:134: ERROR: code indent should use tabs where possible
+100-elf_header.c:134: WARNING: please, no spaces at the start of a line
+100-elf_header.c:135: ERROR: code indent should use tabs where possible
+100-elf_header.c:135: WARNING: please, no spaces at the start of a line
+100-elf_header.c:136: ERROR: code indent should use tabs where possible
+100-elf_header.c:136: WARNING: please, no spaces at the start of a line
+100-elf_header.c:137: ERROR: code indent should use tabs where possible
+100-elf_header.c:137: WARNING: please, no spaces at the start of a line
+100-elf_header.c:138: ERROR: code indent should use tabs where possible
+100-elf_header.c:138: WARNING: please, no spaces at the start of a line
+100-elf_header.c:139: ERROR: code indent should use tabs where possible
+100-elf_header.c:139: WARNING: please, no spaces at the start of a line
+100-elf_header.c:140: ERROR: code indent should use tabs where possible
+100-elf_header.c:140: WARNING: please, no spaces at the start of a line
+100-elf_header.c:141: ERROR: code indent should use tabs where possible
+100-elf_header.c:141: WARNING: please, no spaces at the start of a line
+100-elf_header.c:142: ERROR: code indent should use tabs where possible
+100-elf_header.c:142: WARNING: please, no spaces at the start of a line
+100-elf_header.c:143: ERROR: code indent should use tabs where possible
+100-elf_header.c:143: WARNING: please, no spaces at the start of a line
+100-elf_header.c:144: ERROR: code indent should use tabs where possible
+100-elf_header.c:144: WARNING: please, no spaces at the start of a line
+100-elf_header.c:145: ERROR: code indent should use tabs where possible
+100-elf_header.c:145: WARNING: please, no spaces at the start of a line
+100-elf_header.c:146: ERROR: code indent should use tabs where possible
+100-elf_header.c:146: WARNING: please, no spaces at the start of a line
+100-elf_header.c:147: ERROR: code indent should use tabs where possible
+100-elf_header.c:147: WARNING: please, no spaces at the start of a line
+100-elf_header.c:148: ERROR: code indent should use tabs where possible
+100-elf_header.c:148: WARNING: please, no spaces at the start of a line
+100-elf_header.c:149: ERROR: code indent should use tabs where possible
+100-elf_header.c:149: WARNING: please, no spaces at the start of a line
+100-elf_header.c:150: ERROR: code indent should use tabs where possible
+100-elf_header.c:150: WARNING: please, no spaces at the start of a line
+100-elf_header.c:151: ERROR: code indent should use tabs where possible
+100-elf_header.c:151: WARNING: please, no spaces at the start of a line
+100-elf_header.c:152: ERROR: code indent should use tabs where possible
+100-elf_header.c:152: WARNING: please, no spaces at the start of a line
+100-elf_header.c:153: ERROR: code indent should use tabs where possible
+100-elf_header.c:153: WARNING: please, no spaces at the start of a line
+100-elf_header.c:154: ERROR: code indent should use tabs where possible
+100-elf_header.c:154: WARNING: please, no spaces at the start of a line
+100-elf_header.c:155: ERROR: code indent should use tabs where possible
+100-elf_header.c:155: WARNING: please, no spaces at the start of a line
+100-elf_header.c:156: ERROR: code indent should use tabs where possible
+100-elf_header.c:156: WARNING: please, no spaces at the start of a line
+100-elf_header.c:157: ERROR: code indent should use tabs where possible
+100-elf_header.c:157: WARNING: please, no spaces at the start of a line
+100-elf_header.c:158: ERROR: code indent should use tabs where possible
+100-elf_header.c:158: WARNING: please, no spaces at the start of a line
+100-elf_header.c:159: ERROR: code indent should use tabs where possible
+100-elf_header.c:159: WARNING: please, no spaces at the start of a line
+100-elf_header.c:160: ERROR: code indent should use tabs where possible
+100-elf_header.c:160: WARNING: please, no spaces at the start of a line
+100-elf_header.c:161: ERROR: code indent should use tabs where possible
+100-elf_header.c:162: ERROR: code indent should use tabs where possible
+100-elf_header.c:162: WARNING: please, no spaces at the start of a line
+100-elf_header.c:163: WARNING: please, no spaces at the start of a line
+100-elf_header.c:170: ERROR: open brace '{' following function declarations go on the next line
+100-elf_header.c:171: WARNING: please, no spaces at the start of a line
+100-elf_header.c:172: ERROR: code indent should use tabs where possible
+100-elf_header.c:172: WARNING: please, no spaces at the start of a line
+100-elf_header.c:180: ERROR: open brace '{' following function declarations go on the next line
+100-elf_header.c:181: WARNING: please, no spaces at the start of a line
+100-elf_header.c:182: ERROR: code indent should use tabs where possible
+100-elf_header.c:182: WARNING: please, no spaces at the start of a line
+100-elf_header.c:184: WARNING: please, no spaces at the start of a line
+100-elf_header.c:186: WARNING: please, no spaces at the start of a line
+100-elf_header.c:186: ERROR: switch and case should be at the same indent
+100-elf_header.c:186: ERROR: that open brace { should be on the next line
+100-elf_header.c:187: ERROR: code indent should use tabs where possible
+100-elf_header.c:187: WARNING: please, no spaces at the start of a line
+100-elf_header.c:188: ERROR: code indent should use tabs where possible
+100-elf_header.c:188: WARNING: please, no spaces at the start of a line
+100-elf_header.c:189: ERROR: code indent should use tabs where possible
+100-elf_header.c:189: WARNING: please, no spaces at the start of a line
+100-elf_header.c:190: ERROR: code indent should use tabs where possible
+100-elf_header.c:190: WARNING: please, no spaces at the start of a line
+100-elf_header.c:191: ERROR: code indent should use tabs where possible
+100-elf_header.c:191: WARNING: please, no spaces at the start of a line
+100-elf_header.c:192: ERROR: code indent should use tabs where possible
+100-elf_header.c:192: WARNING: please, no spaces at the start of a line
+100-elf_header.c:193: ERROR: code indent should use tabs where possible
+100-elf_header.c:193: WARNING: please, no spaces at the start of a line
+100-elf_header.c:194: ERROR: code indent should use tabs where possible
+100-elf_header.c:194: WARNING: please, no spaces at the start of a line
+100-elf_header.c:195: ERROR: code indent should use tabs where possible
+100-elf_header.c:195: WARNING: please, no spaces at the start of a line
+100-elf_header.c:196: ERROR: code indent should use tabs where possible
+100-elf_header.c:196: WARNING: please, no spaces at the start of a line
+100-elf_header.c:197: ERROR: code indent should use tabs where possible
+100-elf_header.c:197: WARNING: please, no spaces at the start of a line
+100-elf_header.c:198: ERROR: code indent should use tabs where possible
+100-elf_header.c:198: WARNING: please, no spaces at the start of a line
+100-elf_header.c:199: ERROR: code indent should use tabs where possible
+100-elf_header.c:199: WARNING: please, no spaces at the start of a line
+100-elf_header.c:200: ERROR: code indent should use tabs where possible
+100-elf_header.c:200: WARNING: please, no spaces at the start of a line
+100-elf_header.c:201: ERROR: code indent should use tabs where possible
+100-elf_header.c:201: WARNING: please, no spaces at the start of a line
+100-elf_header.c:202: ERROR: code indent should use tabs where possible
+100-elf_header.c:203: ERROR: code indent should use tabs where possible
+100-elf_header.c:203: WARNING: please, no spaces at the start of a line
+100-elf_header.c:204: WARNING: please, no spaces at the start of a line
+100-elf_header.c:212: ERROR: open brace '{' following function declarations go on the next line
+100-elf_header.c:213: WARNING: please, no spaces at the start of a line
+100-elf_header.c:215: WARNING: please, no spaces at the start of a line
+100-elf_header.c:215: ERROR: that open brace { should be on the next line
+100-elf_header.c:216: ERROR: code indent should use tabs where possible
+100-elf_header.c:216: WARNING: please, no spaces at the start of a line
+100-elf_header.c:217: ERROR: code indent should use tabs where possible
+100-elf_header.c:217: WARNING: please, no spaces at the start of a line
+100-elf_header.c:218: ERROR: code indent should use tabs where possible
+100-elf_header.c:218: WARNING: please, no spaces at the start of a line
+100-elf_header.c:219: WARNING: please, no spaces at the start of a line
+100-elf_header.c:221: WARNING: please, no spaces at the start of a line
+100-elf_header.c:222: ERROR: code indent should use tabs where possible
+100-elf_header.c:222: WARNING: please, no spaces at the start of a line
+100-elf_header.c:223: WARNING: please, no spaces at the start of a line
+100-elf_header.c:224: ERROR: code indent should use tabs where possible
+100-elf_header.c:224: WARNING: please, no spaces at the start of a line
+100-elf_header.c:233: ERROR: open brace '{' following function declarations go on the next line
+100-elf_header.c:234: WARNING: please, no spaces at the start of a line
+100-elf_header.c:234: ERROR: that open brace { should be on the next line
+100-elf_header.c:235: ERROR: code indent should use tabs where possible
+100-elf_header.c:235: WARNING: please, no spaces at the start of a line
+100-elf_header.c:236: ERROR: code indent should use tabs where possible
+100-elf_header.c:236: WARNING: please, no spaces at the start of a line
+100-elf_header.c:237: ERROR: code indent should use tabs where possible
+100-elf_header.c:237: WARNING: please, no spaces at the start of a line
+100-elf_header.c:238: WARNING: please, no spaces at the start of a line
+100-elf_header.c:250: ERROR: open brace '{' following function declarations go on the next line
+100-elf_header.c:251: WARNING: please, no spaces at the start of a line
+100-elf_header.c:252: WARNING: please, no spaces at the start of a line
+100-elf_header.c:254: WARNING: please, no spaces at the start of a line
+100-elf_header.c:255: WARNING: please, no spaces at the start of a line
+100-elf_header.c:255: ERROR: that open brace { should be on the next line
+100-elf_header.c:256: ERROR: code indent should use tabs where possible
+100-elf_header.c:256: WARNING: please, no spaces at the start of a line
+100-elf_header.c:257: ERROR: code indent should use tabs where possible
+100-elf_header.c:257: WARNING: please, no spaces at the start of a line
+100-elf_header.c:258: WARNING: please, no spaces at the start of a line
+100-elf_header.c:260: WARNING: please, no spaces at the start of a line
+100-elf_header.c:261: WARNING: please, no spaces at the start of a line
+100-elf_header.c:261: ERROR: that open brace { should be on the next line
+100-elf_header.c:262: ERROR: code indent should use tabs where possible
+100-elf_header.c:262: WARNING: please, no spaces at the start of a line
+100-elf_header.c:263: ERROR: code indent should use tabs where possible
+100-elf_header.c:263: WARNING: please, no spaces at the start of a line
+100-elf_header.c:264: ERROR: code indent should use tabs where possible
+100-elf_header.c:264: WARNING: please, no spaces at the start of a line
+100-elf_header.c:265: WARNING: please, no spaces at the start of a line
+100-elf_header.c:267: WARNING: please, no spaces at the start of a line
+100-elf_header.c:268: WARNING: please, no spaces at the start of a line
+100-elf_header.c:268: ERROR: that open brace { should be on the next line
+100-elf_header.c:269: ERROR: code indent should use tabs where possible
+100-elf_header.c:269: WARNING: please, no spaces at the start of a line
+100-elf_header.c:270: ERROR: code indent should use tabs where possible
+100-elf_header.c:270: WARNING: please, no spaces at the start of a line
+100-elf_header.c:271: ERROR: code indent should use tabs where possible
+100-elf_header.c:271: WARNING: please, no spaces at the start of a line
+100-elf_header.c:272: ERROR: code indent should use tabs where possible
+100-elf_header.c:272: WARNING: please, no spaces at the start of a line
+100-elf_header.c:273: WARNING: please, no spaces at the start of a line
+100-elf_header.c:275: WARNING: please, no spaces at the start of a line
+100-elf_header.c:276: WARNING: please, no spaces at the start of a line
+100-elf_header.c:277: WARNING: please, no spaces at the start of a line
+100-elf_header.c:278: WARNING: please, no spaces at the start of a line
+100-elf_header.c:279: WARNING: please, no spaces at the start of a line
+100-elf_header.c:280: WARNING: please, no spaces at the start of a line
+100-elf_header.c:281: WARNING: please, no spaces at the start of a line
+100-elf_header.c:282: WARNING: please, no spaces at the start of a line
+100-elf_header.c:283: WARNING: please, no spaces at the start of a line
+100-elf_header.c:284: WARNING: please, no spaces at the start of a line
+100-elf_header.c:286: WARNING: please, no spaces at the start of a line
+100-elf_header.c:287: WARNING: please, no spaces at the start of a line
+100-elf_header.c:289: WARNING: please, no spaces at the start of a line
+total: 137 errors, 161 warnings, 290 lines checked
+verify_elf
+display_magic
+display_elf_class
+display_data_format
+display_version
+display_os_abi
+display_os_abi_version
+display_elf_type
+display_entry_point
+close_file
+main

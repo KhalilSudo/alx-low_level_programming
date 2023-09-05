@@ -1,84 +1,83 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+#define MAXSIZE 1024
+
 /**
- * exit_error - writes an error msg to stderr and exits accordingly
- * @argv: array of arguments
- * @n: the argument number
+ * exit_error - Prints error messages and exits with a specific status.
+ * @status: The status code representing the type of error.
+ * @arg: The argument associated with the error.
  */
-void exit_error(char **argv, int n)
+void exit_error(int status, const char *arg)
 {
-	if (n == 0)
+	switch (status)
 	{
-		dprintf(2, "Usage: cp file_from file_to\n");
+	case 97:
+		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		exit(97);
-	}
-	else if (n == 1)
-	{
-		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
+		break;
+
+	case 98:
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", arg);
 		exit(98);
-	}
-	else if (n == 2)
-	{
-		dprintf(2, "Error: Can't write to %s\n", argv[2]);
+		break;
+
+	case 99:
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", arg);
 		exit(99);
-	}
-}
-/**
- * close_file - checks for errors and closes file descriptor
- * @fd: file descriptor to close
- * Return: 100 if error, 0 if success
- */
-int close_file(int fd)
-{
-	if (close(fd) == -1)
-	{
-		dprintf(2, "Error: Can't close fd %d\n", fd);
+		break;
+
+	case 100:
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", -1);
 		exit(100);
+		break;
+
+	default:
+		break;
 	}
-	return (0);
 }
+
 /**
- * main - copies content of a file to another
- * Return: 0 if success
- *
- * @argc: number of arguments it takes
- * @argv: array of args
+ * main - Entry point of the program.
+ * @argc: The number of command-line arguments.
+ * @argv: An array of strings containing the command-line arguments.
+ * Return: 0 on success, otherwise exits with an error status.
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int file_read, file_write, n_read, n_write;
-	char *buffer[1024];
+	int file_from, file_to;
+	char buff[MAXSIZE];
+	int nr_stats, nw_stats, nc_stats;
 
 	if (argc != 3)
-		exit_error(argv, 0);
-	file_read = open(argv[1], O_RDONLY);
-	if (file_read == -1)
-		exit_error(argv, 1);
-	file_write = open(argv[2], O_WRONLY | O_CREAT | O_EXCL, 0664);
-	if (file_write == -1)
-	{
-		if (errno == EEXIST)
-			file_write = open(argv[2], O_WRONLY | O_TRUNC);
-		else
-		{
-			close_file(file_read);
-			exit_error(argv, 2);
-		}
-	}
-	while ((n_read = read(file_read, buffer, 1024)) > 0)
-	{
-		if (n_read == -1)
-		{
-			dprintf(2, "Error: Can't read from file %s\n", argv[1]);
-			close_file(file_read);
-			close_file(file_write);
-			exit(98);
-		}
-		n_write = write(file_write, buffer, n_read);
-		if (n_write == -1)
-			exit_error(argv, 2);
-	}
-	close_file(file_read);
-	close_file(file_write);
+		exit_error(97, NULL);
+
+	file_from = open(argv[1], O_RDONLY);
+	if (file_from == -1)
+		exit_error(98, argv[1]);
+
+	nr_stats = read(file_from, buff, MAXSIZE);
+	if (nr_stats == -1)
+		exit_error(98, argv[1]);
+
+	file_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
+	if (file_to == -1)
+		exit_error(99, argv[2]);
+
+	nw_stats = write(file_to, buff, (ssize_t)nr_stats);
+	if (nw_stats == -1)
+		exit_error(99, argv[2]);
+
+	nc_stats = close(file_from);
+	if (nc_stats == -1)
+		exit_error(100, argv[1]);
+
+	nc_stats = close(file_to);
+	if (nc_stats == -1)
+		exit_error(100, argv[2]);
+
 	return (0);
 }
-
